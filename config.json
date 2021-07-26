@@ -1,0 +1,127 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.formatOnSave": true,
+  "breadcrumbs.enabled": true,
+  "editor.renderWhitespace": "all",
+  "prettier.jsxSingleQuote": true,
+  "files.associations": {
+    "**/*.html": "html",
+    "**/templates/**/*.html": "django-html",
+    "**/templates/**/*": "django-txt",
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
+  "emmet.includeLanguages": {
+    "django-html": "html",
+    "javascript": "javascriptreact"
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tabSize": 2,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "[jso]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "prettier.singleQuote": true,
+  // VIM
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+
+  "editor.lineNumbers": "relative",
+
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<tab>"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<S-tab>"],
+      "commands": ["workbench.action.previousEditor"]
+    }
+  ],
+
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.splitEditor"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["revealInExplorer"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "after": ["_"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["$"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [">"],
+      "after": [">", "g", "v"]
+    },
+    {
+      "before": ["<"],
+      "after": ["<", "g", "v"]
+    }
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "editor.minimap.enabled": false,
+  "workbench.activityBar.visible": false
+}
