@@ -31,7 +31,7 @@
   },
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "[jso]": {
+  "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "eslint.validate": [
@@ -41,11 +41,13 @@
     "typescriptreact"
   ],
   "prettier.singleQuote": true,
+
   // VIM
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
-
-  "editor.lineNumbers": "relative",
+  "vim.incsearch": true,
+  "vim.hlsearch": false,
+  // "editor.lineNumbers": "relative",
 
   "vim.normalModeKeyBindings": [
     {
@@ -116,12 +118,14 @@
       "after": ["<", "g", "v"]
     }
   ],
+
+  //END VIM
+
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
-  "editor.minimap.enabled": false,
-  "workbench.activityBar.visible": false
+  "editor.minimap.enabled": false
 }
