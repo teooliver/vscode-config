@@ -47,7 +47,7 @@
   "vim.useSystemClipboard": true,
   "vim.incsearch": true,
   "vim.hlsearch": false,
-  // "editor.lineNumbers": "relative",
+  "editor.lineNumbers": "relative",
 
   "vim.normalModeKeyBindings": [
     {
@@ -78,7 +78,16 @@
       "after": ["<Esc>"]
     }
   ],
+
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["ctrl+j"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["ctrl+k"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
     {
       "before": ["<leader>", "d"],
       "after": ["d", "d"]
@@ -106,6 +115,18 @@
     {
       "before": ["<leader>", "l"],
       "after": ["$"]
+    },
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["D"],
+      "after": ["\"", "_", "D"]
+    },
+    {
+      "before": ["d", "d"],
+      "after": ["\"", "_", "d", "d"]
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -127,5 +148,6 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true
 }
