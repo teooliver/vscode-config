@@ -46,7 +46,7 @@
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
   "vim.incsearch": true,
-  "vim.hlsearch": false,
+  "vim.hlsearch": true,
   "editor.lineNumbers": "relative",
 
   "vim.normalModeKeyBindings": [
@@ -129,6 +129,22 @@
       "after": ["\"", "_", "d", "d"]
     }
   ],
+
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["D"],
+      "after": ["\"", "_", "D"]
+    },
+    {
+      "before": ["d", "d"],
+      "after": ["\"", "_", "d", "d"]
+    }
+  ],
+
   "vim.visualModeKeyBindings": [
     {
       "before": [">"],
@@ -149,5 +165,6 @@
     "*.ipynb": "jupyter.notebook.ipynb"
   },
   "editor.minimap.enabled": false,
-  "editor.bracketPairColorization.enabled": true
+  "editor.bracketPairColorization.enabled": true,
+  "rust-analyzer.inlayHints.enable": false
 }
