@@ -166,7 +166,6 @@
   },
   "editor.minimap.enabled": false,
   "editor.bracketPairColorization.enabled": true,
-  "rust-analyzer.inlayHints.enable": false,
-  "workbench.activityBar.visible": false,
-  "editor.guides.bracketPairs": true
+  "editor.guides.bracketPairs": true,
+  "rust-analyzer.inlayHints.enable": false
 }
