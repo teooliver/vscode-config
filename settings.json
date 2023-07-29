@@ -6,8 +6,8 @@
   "prettier.jsxSingleQuote": true,
   "files.associations": {
     "**/*.html": "html",
-    "**/templates/**/*.html": "django-html",
-    "**/templates/**/*": "django-txt",
+    // "**/templates/**/*.html": "django-html",
+    // "**/templates/**/*": "django-txt",
     "**/requirements{/**,*}.{txt,in}": "pip-requirements"
   },
   "emmet.includeLanguages": {
@@ -17,20 +17,18 @@
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "rome.rome"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "rome.rome"
   },
-  "editor.tabSize": 2,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -41,13 +39,15 @@
     "typescriptreact"
   ],
   "prettier.singleQuote": true,
+  "workbench.editor.limit.value": 6,
+  "workbench.editor.limit.enabled": true,
 
   // VIM
+  // "editor.lineNumbers": "relative",
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
   "vim.incsearch": true,
   "vim.hlsearch": true,
-  "editor.lineNumbers": "relative",
 
   "vim.normalModeKeyBindings": [
     {
@@ -167,5 +167,28 @@
   "editor.minimap.enabled": false,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
-  "rust-analyzer.inlayHints.enable": false
+  "telemetry.telemetryLevel": "crash",
+  "settingsSync.ignoredExtensions": [
+    "orta.vscode-jest",
+    "ms-vsliveshare.vsliveshare"
+  ],
+  // "rust-analyzer.inlayHints.hideNamedConstructorHints": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "terminal.integrated.scrollback": 10000,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+
+  // golang
+  "gopls": { "ui.semanticTokens": true },
+  "go.toolsManagement.autoUpdate": true,
+  "go.goroot": "/usr/local/Cellar/go/1.20.6/libexec",
+  "[go]": {
+    // "editor.formatOnSave": true,
+    "editor.defaultFormatter": "golang.go"
+  }
 }
